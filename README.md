@@ -92,5 +92,5 @@ from api import api
  1. Auto refresh in 15 second
  2. A copy and Refresh button
  3. A 15 second timmer
- Files present in templates folder.
+Files present in templates folder.
 ## Thank You!
