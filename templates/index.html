@@ -17,28 +17,91 @@
         align-items: center;
         min-height: 100vh;
       }
+      /* Sticky footer styles
+-------------------------------------------------- */
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+      .footer {
+        position: absolute;
+        width: 100%;
+        height: 60px; /* Set the fixed height of the footer here */
+        line-height: 60px; /* Vertically center the text there */
+        background-color: #f5f5f5;
+      }
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      .container {
+        width: auto;
+        max-width: 680px;
+        padding: 0 15px;
+      }
+      .fa-code{
+        color: white;
+      }
+
+      .bg-prime{
+        background-color: #1976D2;
+      }
+
+      .bg-second{
+        background-color: #2196F3;
+      }
+
+      .text-prime{
+        color: #212121;
+      }
+
+      .text-second{
+        color: #757575;
+      }
+
+      body{
+        background-color: #F5F5F5;
+      }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-prime justify-content-center fixed-top">
       <a href="/" class="navbar-brand display-4">
         Quoter
       </a>
     </nav>
-
-    <div class="container" style="margin-top: 30px;">
-      <h1 style="color:black;font-family: 'Pacifico', cursive;text-align: center;" id="h1">{{quote}}</h1>
-      <center>
+    <main role="main" class="container">
+      <center><i class="fa fa-quote-left display-4" aria-hidden="true"></i>
+      <h1 style="font-family: 'Pacifico', cursive;text-align: center;" class="text-prime" id="h1">{{quote}}</h1>
+      <i class="fa fa-quote-right display-4" aria-hidden="true"></i>
       <p class="lead display-4">
-        <button onclick="copyToClipboard('#h1')" class="btn btn-primary" type="button" style="color: white;">Copy</button>
-        <a href="/" class="btn btn-primary" type="button" style="color: white;">Refresh</a>
+        <button onclick="copyToClipboard('#h1')" class="btn bg-second" type="button" style="color: white;">Copy</button>
+        <a href="/" class="btn bg-second" type="button" style="color: white;">Refresh</a>
+      </p>
+      <p class="lead display-6 text-second">
+        Refreshing in...
       </p>
       <p class="lead">
-         <h3 id = "count" class="display-4">15</h3><h3>Seconds</h3>
+         <h3 id = "count" class="display-4 text-second">15</h3><h3 class="text-second">Seconds</h3>
       </p>
       </center>
-    </div>
+    </main>
     
+    <footer class="footer fixed-bottom bg-prime">
+      <center>
+        <div class="container justify-content-center">
+          <span>
+            <i class="fa fa-code-fork" aria-hidden="true"></i>
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <a class="link" href="https://github.com/ovyas24/quoter.git" style="color: white; text-decoration: none;" target="_blank">
+              Visit GitHub for Code
+            </a>
+          </span>
+        </div>
+      </center>
+    </footer>
     <script>
       var counter = 15;
 
