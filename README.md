@@ -70,6 +70,10 @@ def api():
 
     return data["content"]
 ~~~
+You can either use it directly in your main file or save it as a seprate file and add it to main file by writing this code in start of main.py file
+~~~python
+from api import api
+~~~
 
 ### Step-4: Make a use of data on HTML page
 ~~~html
