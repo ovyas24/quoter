@@ -5,5 +5,5 @@ app =  Flask(__name__)
 
 @app.route('/')
 def index():
-    qoute = api()
-    return render_template("index.html",quote=qoute)
+    quote = api()
+    return render_template("index.html",quote=quote)
