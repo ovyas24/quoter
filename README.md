@@ -23,7 +23,7 @@ def index():
 ~~~
 I Used Template rendering by doing so we can pass data to our html page.
 
-## *** Place your html file in templates folder ***
+#### *** Place your html file in templates folder ***
 
 it should look like yourProjectFile/templates/filename.html
 
@@ -34,5 +34,6 @@ visit this site for Api key and code for implymenting that.
 https://rapidapi.com/martin.svoboda/api/quotes15
 
 After getting your code with Api-Key paste it in a python file to use it as module or use directly in main Flask App.
-In My case I Made a seprate file Named api.py to test it. Later i caged it in a function *its important you convert it to function *
+In My case I Made a seprate file Named api.py to test it. Later i caged it in a function  
+#### *its important you convert it to function *
 
