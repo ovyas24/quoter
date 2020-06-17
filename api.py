@@ -9,7 +9,7 @@ def api():
 
         headers = {
             'x-rapidapi-host': "quotes15.p.rapidapi.com",
-            'x-rapidapi-key': "5b9fba41ddmsh2f2caea5dd3684bp13a7a2jsna70b2449b028"
+            'x-rapidapi-key': "YOUR-API-KEY-HERE"
             }
 
         response = requests.request("GET", url, headers=headers, params=querystring)
